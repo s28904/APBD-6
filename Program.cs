@@ -11,7 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
-builder.Services.AddValidatorsFromAssemblyContaining<CreateAnimalUpdateRequestValidator>();
+builder.Services.RegisterValidators();
 
 var app = builder.Build();
 
