@@ -33,7 +33,6 @@ public class AnimalController : ControllerBase
 
             }
             
-            sqlCommand.Parameters.AddWithValue("@2", request.Description);
             sqlCommand.Parameters.AddWithValue("@3", request.Category);
             sqlCommand.Parameters.AddWithValue("@4", request.Area);
             sqlCommand.Connection.Open();
